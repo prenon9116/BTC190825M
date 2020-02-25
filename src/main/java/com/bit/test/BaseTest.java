@@ -9,6 +9,9 @@ import org.testng.annotations.*;
 public class BaseTest {
 	
 	WebDriver driver;
+	public BaseTest(WebDriver driver) {
+		this.driver=driver;
+	}
 	
 	@BeforeMethod 
 	public void openBrowser(String url) {
